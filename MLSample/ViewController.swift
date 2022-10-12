@@ -65,9 +65,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                             
                             let rounded = Int(confidenceLevel * 100) / 100
                             
-                            self.resultLabel.text = "\(rounded)  \(topResult?.identifier)"
+                            self.resultLabel.text = "\(rounded)%  \(topResult!.identifier)"
                         }
                     }
+                }
+            }
+            
+            let handler = VNImageRequestHandler(ciImage: image)
+            
+            DispatchQueue.global(qos: .userInteractive).async {
+                do {
+                    try handler.perform([request])
+                } catch {
+                    self.resultLabel.text = "Error!"
                 }
             }
         }
