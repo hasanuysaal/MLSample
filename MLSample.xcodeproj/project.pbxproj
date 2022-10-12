@@ -13,6 +13,7 @@
 		4008261D28F708A00034D5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4008261B28F708A00034D5AC /* Main.storyboard */; };
 		4008261F28F708A10034D5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4008261E28F708A10034D5AC /* Assets.xcassets */; };
 		4008262228F708A10034D5AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4008262028F708A10034D5AC /* LaunchScreen.storyboard */; };
+		4008262A28F70A3D0034D5AC /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4008262928F70A3D0034D5AC /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4008261E28F708A10034D5AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4008262128F708A10034D5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4008262328F708A10034D5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4008262928F70A3D0034D5AC /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4008261E28F708A10034D5AC /* Assets.xcassets */,
 				4008262028F708A10034D5AC /* LaunchScreen.storyboard */,
 				4008262328F708A10034D5AC /* Info.plist */,
+				4008262928F70A3D0034D5AC /* MobileNetV2.mlmodel */,
 			);
 			path = MLSample;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				4008261A28F708A00034D5AC /* ViewController.swift in Sources */,
 				4008261628F708A00034D5AC /* AppDelegate.swift in Sources */,
+				4008262A28F70A3D0034D5AC /* MobileNetV2.mlmodel in Sources */,
 				4008261828F708A00034D5AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
